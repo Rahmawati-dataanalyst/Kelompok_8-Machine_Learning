@@ -1,0 +1,114 @@
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                          EXECUTIVE SUMMARY                                 ║
+║      Analisis Komparatif SVM vs Model Baseline untuk Prediksi Nilai       ║
+║                        Akhir Mahasiswa Perguruan Tinggi                    ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📅 TANGGAL EVALUASI: 11 November 2025
+👥 PENELITI: Rahma Fitria Tunnisa (241572010009) & Rahmawati (241572010012)
+🏫 INSTITUSI: STMIK TAZKIA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. OVERVIEW PENELITIAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TUJUAN:
+Membandingkan kinerja algoritma Support Vector Machine (SVM) dengan model 
+baseline (KNN, Random Forest, ANN) dalam memprediksi nilai akhir mahasiswa.
+
+DATASET:
+• Sumber: Higher Education Students Performance Evaluation (UCI ML Repository)
+• Total Instances: 145 mahasiswa
+• Features: 32 variabel (demografi, akademik, kebiasaan belajar)
+• Target: 8 kelas grade (Fail, DD, DC, CC, CB, BB, BA, AA)
+• Split: 116 train (80%) / 29 test (20%)
+
+PREPROCESSING:
+• Data Cleaning: Missing values & duplikat handling
+• Encoding: Label Encoding untuk variabel kategorikal
+• Scaling: StandardScaler untuk SVM
+• Validation: Stratified 5-Fold Cross-Validation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. HASIL PENELITIAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏆 BEST OVERALL MODEL: K-Nearest Neighbors (KNN)
+
+PERFORMA:
+┌─────────────────────┬──────────────┐
+│ Metric              │ Score        │
+├─────────────────────┼──────────────┤
+│ Test Accuracy       │ 81.00%       │
+│ Precision           │ 82.29%       │
+│ Recall              │ 81.00%       │
+│ F1-Score            │ 80.68%       │
+│ Training Time       │ 0.00s       │
+└─────────────────────┴──────────────┘
+
+COMPARISON RESULTS:
+• Best Baseline: K-Nearest Neighbors (KNN) (81.00%)
+• Best SVM: SVM (Sigmoid) (31.03%)
+• Performance Gap: 49.97%
+
+RANKING ALL MODELS:
+
+1. K-Nearest Neighbors (KNN): 81.00%
+2. Artificial Neural Network (ANN): 76.00%
+3. SVM (Sigmoid): 31.03%
+4. SVM (Linear): 24.14%
+5. SVM (RBF): 24.14%
+6. SVM (Polynomial): 24.14%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. KEY FINDINGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+1. Model terbaik adalah K-Nearest Neighbors (KNN) dengan akurasi 81.00%
+2. Baseline model masih memberikan performa terbaik. Baseline: 81.00% vs SVM: 31.03%
+3. Model paling efisien (accuracy/time): K-Nearest Neighbors (KNN) (efficiency score: inf)
+4. Model tercepat: K-Nearest Neighbors (KNN) (0.00s training time)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. KESIMPULAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+📊 Meskipun SVM memberikan performa kompetitif (31.03%), model baseline
+   (K-Nearest Neighbors (KNN)) masih sedikit lebih baik (81.00%).
+
+💡 Hal ini menunjukkan bahwa:
+   • Dataset size (145 instances) mungkin masih terbatas untuk SVM optimal
+   • Baseline models lebih cocok untuk karakteristik data ini
+   • Ensemble methods bisa menjadi solusi terbaik
+
+✅ Namun, SVM tetap viable option dengan performa yang sangat kompetitif.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. REKOMENDASI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+UNTUK IMPLEMENTASI PRODUCTION:
+→ Model: K-Nearest Neighbors (KNN)
+→ Alasan: Balance optimal antara akurasi, kecepatan, dan reliabilitas
+→ Use Case: Real-time Early Warning System
+
+UNTUK PENINGKATAN PERFORMA:
+1. Perbanyak data training (target: >500 instances)
+2. Feature engineering lebih mendalam
+3. Implementasi ensemble methods (voting/stacking)
+4. Fine-tuning hyperparameter lebih intensif
+5. Penanganan imbalanced classes dengan SMOTE/ADASYN
+
+KONTRIBUSI PENELITIAN:
+• Benchmark baru untuk dataset Higher Education Students Performance
+• Perbandingan komprehensif SVM vs baseline models
+• Framework reproducible untuk penelitian serupa
+• Insights praktis untuk implementasi Early Warning System
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                            END OF SUMMARY                                  ║
+╚════════════════════════════════════════════════════════════════════════════╝

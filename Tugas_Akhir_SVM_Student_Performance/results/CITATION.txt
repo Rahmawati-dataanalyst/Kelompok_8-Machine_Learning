@@ -1,0 +1,33 @@
+
+═══════════════════════════════════════════════════════════════════════════
+                            CITATION FORMAT
+═══════════════════════════════════════════════════════════════════════════
+
+APA Format:
+───────────
+Tunnisa, R. F., & Rahmawati. (2025). Analisis Komparatif 
+Kinerja Klasifikasi Support Vector Machine (SVM) dan Model Baseline pada 
+Prediksi Nilai Akhir Mahasiswa Perguruan Tinggi. Tugas Akhir, Program Studi 
+Sistem Informasi, STMIK TAZKIA.
+
+IEEE Format:
+────────────
+R. F. Tunnisa and Rahmawati, "Analisis Komparatif Kinerja Klasifikasi 
+Support Vector Machine (SVM) dan Model Baseline pada Prediksi Nilai Akhir 
+Mahasiswa Perguruan Tinggi," Tugas Akhir, Prog. Studi Sistem Informasi, 
+STMIK TAZKIA, 2025.
+
+BibTeX:
+───────
+@mastersthesis{tunnisa2025svm,
+  author    = {Tunnisa, Rahma Fitria and Rahmawati},
+  title     = {Analisis Komparatif Kinerja Klasifikasi Support Vector 
+               Machine (SVM) dan Model Baseline pada Prediksi Nilai Akhir 
+               Mahasiswa Perguruan Tinggi},
+  school    = {STMIK TAZKIA},
+  year      = {2025},
+  type      = {Tugas Akhir},
+  address   = {Bogor, Indonesia}
+}
+
+═══════════════════════════════════════════════════════════════════════════

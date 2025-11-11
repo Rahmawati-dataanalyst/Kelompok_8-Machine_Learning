@@ -1,0 +1,181 @@
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                     RESEARCH ARTIFACTS INVENTORY                           ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📁 STRUKTUR FOLDER:
+
+Tugas_Akhir_SVM_Student_Performance/
+│
+├── 📁 data/
+│   ├── raw/
+│   │   └── DATA (1).csv                          ✅ Original dataset
+│   └── processed/
+│       ├── data_cleaned.csv                      ✅ Cleaned data
+│       ├── train_test_split.npz                  ✅ Unscaled split
+│       ├── train_test_split_scaled.npz           ✅ Scaled split (for SVM)
+│       ├── preprocessing_objects.pkl             ✅ Scalers & encoders
+│       └── metadata.pkl                          ✅ Dataset metadata
+│
+├── 📁 notebooks/
+│   ├── 01_EDA_and_Preprocessing.ipynb            ✅ EDA & data cleaning
+│   ├── 02_Data_Preprocessing.ipynb               ✅ Feature engineering & scaling
+│   ├── 03_Baseline_Models.ipynb                  ✅ KNN, RF, ANN training
+│   ├── 04_SVM_Modeling.ipynb                     ✅ SVM (4 kernels) training
+│   └── 05_Final_Evaluation_and_Report.ipynb      ✅ Comprehensive evaluation
+│
+├── 📁 models/
+│   ├── knn_model.pkl                             ✅ Trained KNN
+│   ├── random_forest_model.pkl                   ✅ Trained RF
+│   ├── ann_model.pkl                             ✅ Trained ANN
+│   ├── svm_linear_model.pkl                      ✅ Trained SVM Linear
+│   ├── svm_rbf_model.pkl                         ✅ Trained SVM RBF
+│   ├── svm_poly_model.pkl                        ✅ Trained SVM Poly
+│   ├── svm_sigmoid_model.pkl                     ✅ Trained SVM Sigmoid
+│   └── svm_best_model.pkl                        ✅ Best SVM model
+│
+├── 📁 results/
+│   ├── figures/
+│   │   ├── distribution_plots/
+│   │   │   ├── target_distribution.png           ✅ Target distribution
+│   │   │   ├── correlation_heatmap.png           ✅ Feature correlation
+│   │   │   ├── train_test_split_distribution.png ✅ Split verification
+│   │   │   ├── feature_scaling_comparison.png    ✅ Scaling effect
+│   │   │   ├── feature_importance_rf.png         ✅ RF feature importance
+│   │   │   └── ann_loss_curve.png                ✅ ANN training curve
+│   │   │
+│   │   ├── confusion_matrices/
+│   │   │   ├── cm_knn.png                        ✅ KNN confusion matrix
+│   │   │   ├── cm_rf.png                         ✅ RF confusion matrix
+│   │   │   ├── cm_ann.png                        ✅ ANN confusion matrix
+│   │   │   └── cm_svm_best.png                   ✅ Best SVM confusion matrix
+│   │   │
+│   │   └── comparison_charts/
+│   │       ├── baseline_models_comparison.png    ✅ Baseline comparison
+│   │       ├── accuracy_comparison_baseline.png  ✅ Baseline accuracy chart
+│   │       ├── svm_kernels_comparison.png        ✅ SVM kernels comparison
+│   │       ├── final_all_models_comparison.png   ✅ Final comparison (all)
+│   │       ├── training_time_comparison.png      ✅ Time comparison
+│   │       ├── all_confusion_matrices.png        ✅ All CM comparison
+│   │       ├── per_class_performance_heatmap.png ✅ Per-class heatmap
+│   │       ├── radar_chart_comparison.png        ✅ Radar chart (top 4)
+│   │       └── time_vs_accuracy_tradeoff.png     ✅ Trade-off analysis
+│   │
+│   ├── metrics/
+│   │   ├── baseline_models_results.csv           ✅ Baseline metrics
+│   │   ├── baseline_predictions.pkl              ✅ Baseline predictions
+│   │   ├── best_baseline_info.pkl                ✅ Best baseline info
+│   │   ├── svm_all_kernels_results.csv           ✅ All SVM kernels
+│   │   ├── svm_predictions.pkl                   ✅ SVM predictions
+│   │   ├── svm_detailed_results.pkl              ✅ SVM detailed results
+│   │   ├── final_all_models_comparison.csv       ✅ Final comparison CSV
+│   │   ├── final_report_summary.json             ✅ JSON summary
+│   │   └── final_report_comparison.xlsx          ✅ Excel comparison
+│   │
+│   ├── EXECUTIVE_SUMMARY.txt                     ✅ Executive summary
+│   ├── LAPORAN_AKHIR.md                          ✅ Full markdown report
+│   ├── PRESENTATION_SLIDES.md                    ✅ Presentation slides
+│   ├── COMPREHENSIVE_RESULTS.xlsx                ✅ Comprehensive Excel
+│   └── RESEARCH_ARTIFACTS_INVENTORY.txt          ✅ This file
+│
+└── 📁 reports/
+    ├── Laporan_Akhir.docx                        📝 Final report (manual)
+    └── Presentasi.pptx                           📝 Presentation (manual)
+
+═══════════════════════════════════════════════════════════════════════════
+
+📊 RESEARCH OUTPUTS SUMMARY:
+
+✅ DATASETS:
+   • Original: 1 file
+   • Processed: 5 files
+
+✅ NOTEBOOKS:
+   • Total: 5 comprehensive notebooks
+   • Code cells: ~200+
+   • Markdown cells: ~50+
+
+✅ MODELS:
+   • Baseline: 3 models (KNN, RF, ANN)
+   • SVM: 4 kernels (Linear, RBF, Poly, Sigmoid)
+   • Total: 8 trained models
+
+✅ VISUALIZATIONS:
+   • Distribution plots: 6 figures
+   • Confusion matrices: 5 figures
+   • Comparison charts: 8 figures
+   • Total: 19 visualizations
+
+✅ METRICS & RESULTS:
+   • CSV files: 3
+   • PKL files: 5
+   • Excel files: 2
+   • JSON files: 1
+   • Total: 11 result files
+
+✅ DOCUMENTATION:
+   • Executive summary: 1
+   • Full report: 1 (markdown)
+   • Presentation: 1 (markdown)
+   • Inventory: 1
+   • Total: 4 documents
+
+═══════════════════════════════════════════════════════════════════════════
+
+💾 TOTAL FILE SIZE: ~50-100 MB (estimated)
+📁 TOTAL FILES: 70+ files
+⏱️  TOTAL RESEARCH TIME: ~10-15 hours
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎓 REPRODUCIBILITY CHECKLIST:
+
+✅ All code in Jupyter Notebooks
+✅ All data preprocessing documented
+✅ All hyperparameters recorded
+✅ All random seeds set (42)
+✅ All results saved and versioned
+✅ All visualizations high-resolution (300 DPI)
+✅ All metrics calculated consistently
+✅ All models saved for reuse
+
+═══════════════════════════════════════════════════════════════════════════
+
+📖 HOW TO USE THIS RESEARCH:
+
+1. UNTUK REPRODUKSI:
+   - Jalankan notebooks 01-05 secara berurutan
+   - Semua output akan ter-generate otomatis
+   - Check dependencies: pandas, numpy, scikit-learn, seaborn, matplotlib
+
+2. UNTUK IMPLEMENTASI:
+   - Load best model: joblib.load('models/svm_best_model.pkl')
+   - Load scaler: pickle.load('data/processed/preprocessing_objects.pkl')
+   - Preprocess new data dengan scaler yang sama
+   - Predict: model.predict(new_data_scaled)
+
+3. UNTUK LAPORAN:
+   - Base: LAPORAN_AKHIR.md
+   - Summary: EXECUTIVE_SUMMARY.txt
+   - Presentation: PRESENTATION_SLIDES.md
+   - Data: COMPREHENSIVE_RESULTS.xlsx
+
+4. UNTUK PUBLIKASI:
+   - Code: Jupyter Notebooks
+   - Figures: results/figures/ (300 DPI)
+   - Metrics: results/metrics/
+   - Documentation: All markdown files
+
+═══════════════════════════════════════════════════════════════════════════
+
+🔗 QUICK LINKS:
+
+📊 Best Model: models/svm_best_model.pkl
+📈 All Results: results/COMPREHENSIVE_RESULTS.xlsx
+📝 Full Report: results/LAPORAN_AKHIR.md
+🎯 Executive Summary: results/EXECUTIVE_SUMMARY.txt
+🎨 Visualizations: results/figures/
+
+═══════════════════════════════════════════════════════════════════════════
+
+Generated: {datetime.now().strftime('%d %B %Y, %H:%M:%S')}
