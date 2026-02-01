@@ -54,6 +54,18 @@ Model MLP yang diusulkan dibandingkan dengan **Support Vector Machine (SVM)** se
 |    ├── Peper Higher Education Students Performance Evaluation.pdf
 |    └── Peper Referensi A Study of Factors Affecting Learning Efficiency on Higher Education Student.pdf                     
 ```
+## 📺 Presentasi Video
+Untuk penjelasan lebih mendalam mengenai proyek Analisis Klasifikasi SVM ini, silakan akses video presentasi kami melalui tautan di bawah ini:
+
+| Materi | Link Akses |
+| :--- | :--- |
+| **Video Presentasi UAS** | [🎥 Tonton di Google Drive](https://drive.google.com/drive/folders/1qD6hdHXaP7qq0klLVrwC7MNz7BlooQVHhttps://drive.google.com/drive/folders/1lxzupN6Q-qqmpgbL44robMy9LGK1D0uz?usp=drive_link) |
+---
+## 📂 Struktur Folder di Google Drive
+Di dalam link tersebut, Anda akan menemukan:
+* Rekaman presentasi hasil evaluasi model SVM.
+* Penjelasan komparasi dengan model baseline.
+
 Kontributor
 Kelompok 08 – Machine Learning
 Rahma Fitria Tunnisa & Rahmawati
